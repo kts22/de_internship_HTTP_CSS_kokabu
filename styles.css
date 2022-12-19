@@ -1,33 +1,31 @@
-*{
-    boxox-sizing: border-box
+* {
+  boxox-sizing: border-box;
 }
 
-header{
-    height: 120px;
-    width: 100%;
+header {
+  height: 120px;
+  width: 100%;
 }
 
-.hd-left-logo_circle{
-
+.hd-left-logo_circle {
 }
 
-.hd-left-name{
-    color: #258CC3;
-
+.hd-left-name {
+  color: #258cc3;
 }
 
-.hd-right{
-    float: right;
+.hd-right {
+  float: right;
 }
 
-.hd-right a{
-    color: black;
-    text-decoration: none;
-    float: left;
+.hd-right a {
+  color: black;
+  text-decoration: none;
+  float: left;
 }
 
-.hd-right a:hover{
-    border-bottom: solid;
-    border-color: #258CC3;
-    border-width: 4px;
+.hd-right a:hover {
+  border-bottom: solid;
+  border-color: #258cc3;
+  border-width: 4px;
 }

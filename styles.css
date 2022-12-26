@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -7,39 +9,38 @@
   display: flex;
   justify-content: space-between;
   margin: 0 100px;
+  align-items: center;
 }
 
 .hd-left {
-  padding-top: 30px;
 }
 
 .hd-right {
-  padding-top: 30px;
+  display: flex;
+  gap: 20px;
 }
 
 .hd-right a {
   color: black;
   text-decoration: none;
-  margin: 0 20px 0 0;
+  height: 26px;
 }
 
 .hd-right a:hover {
-  border-bottom: solid;
-  border-color: #258cc3;
-  border-width: 3px;
+  border-bottom: 3px solid #258cc3;
   padding-bottom: 2px;
 }
 
 .top-wrapper {
   width: 100%;
   height: 600px;
-  background-image: url("sample_back.png");
+  background-image: url("image/sample_back.png");
   background-size: cover;
   color: #ffffff;
   position: relative;
 }
 
-.top-wrapper_title {
+.top-wrapper__title {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -47,27 +48,28 @@
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  line-height: 0.5;
+  line-height: 130.02%;
+  letter-spacing: 0.3em;
+  width: 661px;
+  height: 104px;
+  white-space: nowrap;
 }
 
-.middle-wrapper_title {
+.middle-wrapper__title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   margin-top: 50px;
+  line-height: 43px;
 }
 
-.title_notice {
+.title-notice {
   margin: 0;
   display: inline-block;
   position: relative;
-  /*border-bottom: solid;*/
-  /*border-color: black;*/
-  /*border-width: 1px;*/
-  /*padding-bottom: 13px;*/
 }
 
-.title_notice:before {
+.title-notice:before {
   content: "";
   position: absolute;
   bottom: -13px;
@@ -79,14 +81,74 @@
   background-color: black;
 }
 
+.middle-wrapper__main {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.news-list {
+  list-style: none outside;
+  margin: 0 100px;
+}
+
+.news-item a {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 31px 25px;
+}
+
+.news-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.news-date {
+  margin: 0;
+  font-size: 16px;
+  padding: 0 52px 0 0;
+  line-height: 23px;
+}
+
+.news-title {
+  margin: 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.middle-wrapper__ft {
+  height: 100px;
+  margin: 0 132px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.middle-wrapper__ft a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: none;
+  color: black;
+  height: 23px;
+}
+
+.middle-wrapper__ft a:hover {
+  border-bottom: 3px solid #258cc3;
+  padding-bottom: 2px;
+}
+
 .bottom-wrapper {
   width: 100%;
   height: 326px;
-  background-image: url("bottom_image.png");
+  background-image: url("image/bottom_image.png");
   background-size: cover;
 }
 
-.bottom-wrapper_title {
+.bottom-wrapper__title {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
@@ -94,13 +156,16 @@
   position: relative;
 }
 
-.title_inquiry {
+.title-inquiry {
   margin: 50px 0 0 0;
   position: relative;
   display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
 }
 
-.title_inquiry:before {
+.title-inquiry:before {
   content: "";
   position: absolute;
   bottom: -13px;
@@ -112,13 +177,13 @@
   background-color: white;
 }
 
-.bottom-wrapper_main {
+.bottom-wrapper__main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.bw-main_form {
+.bw-main__form {
   width: 684px;
   height: 106px;
   background-color: #00d3c7;
@@ -127,7 +192,7 @@
   position: relative;
 }
 
-.form_title {
+.form-title {
   font-weight: 700;
   font-size: 30px;
   color: white;
@@ -139,19 +204,19 @@
   white-space: nowrap;
 }
 
-.bw-main_form:hover {
+.bw-main__form:hover {
   opacity: 0.7;
 }
 
-.bw-main_form:before {
-  content: url("mail.svg");
+.bw-main__form:before {
+  content: url("image/mail.svg");
   position: absolute;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
 }
 
-.bw-main_comment {
+.bw-main__comment {
   color: white;
   text-align: center;
   font-size: 14px;
@@ -169,7 +234,7 @@
   position: relative;
 }
 
-.copyright_name {
+.copyright-name {
   margin: 0;
   color: white;
   font-size: 16px;
@@ -180,5 +245,14 @@
   transform: translateY(-50%) translateX(-50%);
 }
 
-.to-top {
+.page-top-btn {
+  margin: 0 100px;
+  display: flex;
+  justify-content: right;
+}
+
+.page-top {
+  position: fixed;
+  bottom: 29px;
+  z-index: 10;
 }

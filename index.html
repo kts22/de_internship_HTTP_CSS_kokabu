@@ -6,48 +6,75 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div class="hd-left">
-          <img class="hd-left-logo" src="logo.svg" />
-        </div>
-        <div class="hd-right">
-          <a href="#">ホーム</a>
-          <a href="#">会社情報</a>
-          <a href="#">お問い合わせ</a>
-        </div>
+    <header class="header">
+      <div class="hd-left">
+        <img class="hd-left-logo" src="image/logo.svg" />
       </div>
+      <section class="hd-right">
+        <a href="#">ホーム</a>
+        <a href="#">会社情報</a>
+        <a href="#">お問い合わせ</a>
+      </section>
     </header>
     <main>
       <div class="content">
         <div class="top-wrapper">
-          <div class="top-wrapper_title">
+          <div class="top-wrapper__title">
             <p>サンプルサンプルサンプル、</p>
             <p>サンプルサンプル。</p>
           </div>
         </div>
         <div class="middle-wrapper">
-          <div class="middle-wrapper_title">
-            <p class="title_notice">お知らせ</p>
+          <div class="middle-wrapper__title">
+            <p class="title-notice">お知らせ</p>
           </div>
-          <div class="middle-wrapper_main"></div>
-          <div class="middle-wrapper_ft">
-            <a href="#">お知らせの一覧を見る</a>
+          <div class="middle-wrapper__main">
+            <ul class="news-list">
+              <li class="news-item">
+                <a href="#">
+                  <p class="news-date">0000/00/00</p>
+                  <p class="news-title">0000年度の採用情報を公開しました</p>
+                </a>
+              </li>
+              <li class="news-item">
+                <a href="#">
+                  <p class="news-date">0000/00/00</p>
+                  <p class="news-title">
+                    長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合
+                  </p>
+                </a>
+              </li>
+              <li class="news-item">
+                <a href="#">
+                  <p class="news-date">0000/00/00</p>
+                  <p class="news-title">0000年度の事例を更新しました</p>
+                </a>
+              </li>
+              <li class="news-item">
+                <a href="#">
+                  <p class="news-date">0000/00/00</p>
+                  <p class="news-title">
+                    サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="middle-wrapper__ft">
+            <a href="#">お知らせの一覧を見る ></a>
           </div>
         </div>
         <div class="bottom-wrapper">
-          <div class="bottom-wrapper_title">
-            <p class="title_inquiry">お問い合わせ</p>
+          <div class="bottom-wrapper__title">
+            <p class="title-inquiry">お問い合わせ</p>
           </div>
-          <div class="bottom-wrapper_main">
-            <a
-              ><div class="bw-main_form">
-                <span href="#" class="form_title"
-                  >お問い合わせフォームはこちら</span
-                >
+          <div class="bottom-wrapper__main">
+            <a href="#"
+              ><div class="bw-main__form">
+                <span class="form-title">お問い合わせフォームはこちら</span>
               </div>
             </a>
-            <div class="bw-main_comment">
+            <div class="bw-main__comment">
               <p class="comment">
                 ※3営業日以内の返信となります。ご了承ください。
               </p>
@@ -59,11 +86,11 @@
     <footer>
       <div class="footer">
         <div class="ft-copyright">
-          <p class="copyright_name">Copyright @ 株式会社XXXXXX</p>
+          <p class="copyright-name">Copyright @ 株式会社XXXXXX</p>
         </div>
-        <div class="to_top_btn">
+        <div class="page-top-btn">
           <a href="#">
-            <img class="to-top" src="to_top_btn.svg" />
+            <img class="page-top" src="image/to_top_btn.svg" />
           </a>
         </div>
       </div>

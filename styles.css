@@ -225,7 +225,7 @@
 }
 
 .comment {
-  margin-top: 13px;
+  margin-top: 12px;
 }
 
 .footer {
@@ -268,8 +268,13 @@
     display: none;
   }
 
-  .middle-wrapper__title {
-    margin-top: 34px;
+  .top-wrapper {
+    height: 900px;
+    background-position: 75%;
+  }
+
+  .middle-wrapper {
+    padding-top: 34px;
   }
 
   .news-list {
@@ -285,7 +290,21 @@
     margin: 0 22px;
   }
 
+  .bottom-wrapper {
+    height: 300px;
+    background-image: url("image/bottom_image_980px.png");
+    background-size: cover;
+  }
+
   .title-inquiry {
     margin-top: 35px;
+  }
+
+  .bw-main__form {
+    margin-top: 40px;
+  }
+
+  .comment {
+    margin-top: 21px;
   }
 }

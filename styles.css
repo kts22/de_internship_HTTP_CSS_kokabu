@@ -52,11 +52,14 @@
   white-space: nowrap;
 }
 
+.middle-wrapper {
+  padding-top: 50px;
+}
+
 .middle-wrapper__title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  margin-top: 50px;
   line-height: 43px;
 }
 
@@ -66,7 +69,7 @@
   position: relative;
 }
 
-.title-notice:before {
+.title-notice:after {
   content: "";
   position: absolute;
   bottom: -13px;
@@ -256,7 +259,6 @@
 }
 
 @media screen and (max-width: 980px) {
-
   .header {
     margin: 0 22px;
   }
@@ -270,7 +272,7 @@
   }
 
   .news-list {
-    margin: 22px;
+    margin: 0 22px;
   }
 
   .news-date {
@@ -285,5 +287,4 @@
   .title-inquiry {
     margin-top: 35px;
   }
-
 }

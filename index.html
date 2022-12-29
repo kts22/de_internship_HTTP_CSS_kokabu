@@ -2,18 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>de_internship_site</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="hd-left">
-        <div class="hd-left-logo_circle">
-          <div class="hd-left_logo_L"></div>
-        </div>
-        <div class="hd-left-name">
-          <h1>LOGO IMAGE</h1>
-        </div>
+        <img class="hd-left-logo" src="image/logo.svg" />
       </div>
       <div class="hd-right">
         <a href="#">ホーム</a>
@@ -24,35 +20,92 @@
     <main>
       <div class="content">
         <div class="top-wrapper">
-          <h1>サンプルサンプルサンプル、</h1>
-          <h1>サンプルサンプル。</h1>
+          <div class="top-wrapper__title">
+            <p>サンプルサンプルサンプル、</p>
+            <p>サンプルサンプル。</p>
+          </div>
         </div>
         <div class="middle-wrapper">
-          <div class="hd-notice">
-            <h2>お知らせ</h2>
+          <div class="middle-wrapper__title">
+            <p class="title-notice">お知らせ</p>
           </div>
-          <div class="bd-notice"></div>
-          <div class="ft-notice">
-            <a href="#">お知らせの一覧を見る</a>
+          <div class="middle-wrapper__main">
+            <ul class="news-list">
+              <li class="news-item">
+                <a href="#">
+                  <div class="item-date">
+                    <p class="news-date">0000/00/00</p>
+                  </div>
+                  <p class="news-title">0000年度の採用情報を公開しました</p>
+                </a>
+              </li>
+              <li class="news-item">
+                <a href="#">
+                  <div class="item-date">
+                    <p class="news-date">0000/00/00</p>
+                  </div>
+                  <p class="news-title">
+                    長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合長いテキストの場合
+                  </p>
+                </a>
+              </li>
+              <li class="news-item">
+                <a href="#">
+                  <div class="item-date">
+                    <p class="news-date">0000/00/00</p>
+                  </div>
+                  <p class="news-title">0000年度の事例を更新しました</p>
+                </a>
+              </li>
+              <li class="news-item">
+                <a href="#">
+                  <div class="item-date">
+                    <p class="news-date">0000/00/00</p>
+                  </div>
+                  <p class="news-title">
+                    サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="middle-wrapper__ft">
+            <a href="#">お知らせの一覧を見る ></a>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
+          <div class="bottom-wrapper__title">
+            <p class="title-inquiry">お問い合わせ</p>
+          </div>
+          <div class="bottom-wrapper__main">
+            <a href="#"
+              ><div class="bw-main__form">
+                <span class="form-title">お問い合わせフォームはこちら</span>
+              </div>
+            </a>
+            <div class="bw-main__comment">
+              <p class="comment">
+                ※3営業日以内の返信となります。ご了承ください。
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="ft-title">
-        <h2>お問い合わせ</h2>
-      </div>
-      <div class="ft-main">
-        <div class="ft-main_form">
-          <a href="#">お問い合わせフォームはこちら</a>
+      <div class="footer">
+        <div class="ft-copyright">
+          <p class="copyright-name">Copyright @ 株式会社XXXXXX</p>
         </div>
-        <div class="ft-main_comment">
-          <p>※3営業日以内の返信となります。ご了承ください。</p>
-        </div>
-      </div>
-      <div class="ft-copyright">
-        <p>Copyright @　株式会社XXXXXX</p>
       </div>
     </footer>
+
+    <!--ページ上部にスクロールするボタン-->
+    <div class="page-top-btn">
+      <button id="up-btn">
+        <img class="page-top" src="image/to_top_btn.svg" />
+      </button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

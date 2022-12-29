@@ -90,6 +90,7 @@
 .news-list {
   list-style: none outside;
   margin: 0 100px;
+  width: 100%;
 }
 
 .news-item a {
